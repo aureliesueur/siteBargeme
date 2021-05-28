@@ -1,0 +1,346 @@
+body {
+  font-family: "Open Sans", Verdana, Geneva, sans-serif;
+  font-size: 0.9em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px !important;
+  margin: 60px;
+}
+
+.parcours__title, .pitchs__title {
+  font-family: "Roboto", "Raleway", Verdana, sans-serif;
+  font-size: 2.5em;
+  color: #732237;
+  font-weight: bold;
+  border-bottom: 2px solid #732237;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.parcours {
+  background: url("../images/fondecriture.jpg") fixed no-repeat;
+  margin: 50px;
+  padding: 100px;
+}
+.parcours__box {
+  background: rgba(250, 250, 250, 0.8);
+  padding: 60px;
+}
+.parcours__citation {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2em;
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.parcours__text {
+  margin-left: 20px;
+  text-align: justify;
+}
+.parcours__photos {
+  display: flex;
+  justify-content: center;
+}
+.parcours__photo {
+  border: 2px solid #000;
+  max-height: 250px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.parcours__actu {
+  width: 40%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.photos__vertical {
+  margin-right: 5px;
+}
+
+.pitchs {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.pitchs__title {
+  font-size: 2em;
+}
+.pitchs__projets {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.pitchs__proj {
+  border: 1px solid #607375;
+  border-radius: 5px;
+  padding: 20px;
+}
+.pitchs__proj h3 {
+  color: #000;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.pitchs__proj h4 {
+  background-color: #607375;
+  font-size: 1.5em;
+  color: #FFF;
+}
+.pitchs__proj i {
+  font-size: 1em !important;
+  color: #000;
+  margin-left: 10px;
+}
+.pitchs__appel {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pitchs__appel h3 {
+  margin-top: 60px;
+  text-transform: none !important;
+  color: #732237 !important;
+  font-size: 1.3em !important;
+  font-weight: bold;
+}
+.pitchs__appel a, .pitchs__appel i {
+  font-size: 2em;
+  color: #607375;
+}
+.pitchs__appel a:hover, .pitchs__appel i:hover {
+  color: #732237;
+}
+
+#theatre {
+  margin-right: 30px;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    padding: 40px !important;
+  }
+
+  .parcours__title, .pitchs__title {
+    font-size: 2.2em;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .parcours {
+    padding: 60px;
+    margin: 0;
+  }
+  .parcours__citation {
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .parcours__text {
+    margin-left: 0px;
+  }
+  .parcours__photos {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .parcours__photo {
+    height: 250px;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .parcours__actu {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .photos__vertical {
+    margin: 20px 0 5px 0;
+  }
+
+  .pitchs__title {
+    font-size: 1.8em;
+  }
+  .pitchs__projets {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pitchs__proj {
+    padding: 30px;
+    width: 90%;
+  }
+  .pitchs__proj h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  .pitchs__proj h4 {
+    font-size: 1.5em;
+  }
+  .pitchs__appel {
+    width: 60%;
+  }
+  .pitchs__appel h3 {
+    margin-top: 60px;
+    font-size: 1.3em !important;
+  }
+  .pitchs__appel a, .pitchs__appel i {
+    font-size: 2em;
+  }
+
+  #theatre {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+/* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 1150px) and (max-width: 1320px) {
+  .parcours__photo {
+    height: 200px;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .parcours, .pitchs {
+    padding: 30px;
+    margin: 20px;
+  }
+  .parcours__title, .pitchs__title {
+    font-size: 2.2em;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .parcours__citation {
+    width: 90%;
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .parcours__box {
+    padding: 30px;
+  }
+  .parcours__text {
+    margin-left: 0px;
+  }
+  .parcours__photos {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .parcours__photo {
+    min-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .parcours__actu {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .photos__vertical {
+    margin: 20px 0 5px 0;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .photos__vertical img {
+    margin-bottom: 5px;
+  }
+  .photos__horizontal {
+    width: 100% x;
+  }
+
+  .pitchs {
+    padding: 0;
+    width: 100%;
+  }
+  .pitchs__title {
+    font-size: 1.5em;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .pitchs__projets {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pitchs__proj {
+    padding: 15px;
+    width: 90%;
+  }
+  .pitchs__proj h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  .pitchs__proj h4 {
+    font-size: 1.5em;
+  }
+  .pitchs__appel {
+    width: 90%;
+    text-align: center;
+  }
+  .pitchs__appel h3 {
+    margin-top: 60px;
+    font-size: 1.3em !important;
+  }
+  .pitchs__appel a, .pitchs__appel i {
+    font-size: 2em;
+  }
+
+  #theatre {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+/* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN SMARTPHONE------------------------------*/
+@media screen and (min-width: 500px) and (max-width: 1150px) {
+  .parcours__photo {
+    border: 2px solid #000;
+    max-height: 250px;
+    min-width: 0;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .photos__vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .photos__vertical img {
+    min-width: 30% !important;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=bargeme-auteur.css.map */

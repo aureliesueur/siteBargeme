@@ -1,0 +1,208 @@
+$primarycolor: #9fb3b5;
+$secondarycolor: #732237; 
+$tertiarycolor: rgb(199,198,200);
+$boxcolor: #607375;
+
+
+/* MENU */
+header {
+    font-family: "Roboto", "Raleway", Verdana, sans-serif;
+    background-color: lighten($primarycolor, 10%);
+}
+
+
+.menu {
+    box-shadow:$boxcolor 6px 6px 10px;
+    &__item {
+        margin-top: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        & a { 
+            padding: 0!important;
+            text-align: center;
+            margin-left: 50px;
+            color:black!important;
+            &:hover{
+               color: #FFF!important;
+               text-decoration: none;
+            }
+        }
+    }
+    &__link {
+        font-size: 1.4em!important;
+    }
+    &__sousmenu a {
+        text-align: left;
+        margin-left: 10px;
+        padding: 0!important;
+        text-transform: lowercase;
+        font-size: 14px!important;
+        &:hover {
+            width: 90%;
+            background-color: $primarycolor;
+        }
+    }
+    &__img1 {
+        display: none;
+    }
+}
+
+
+#dropdownMenuMetiers {
+    margin-right: 70px;
+}
+
+/* RESEAUX SOCIAUX */
+
+.sociallist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0;
+    &__social a {
+        color: #000!important;
+        font-size: 2em;
+        &:hover {
+            color: #FFF!important;
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: $secondarycolor;
+    color: #FFF!important;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__contact {
+        width: 30%;
+        font-size: 4em;
+        text-align: center;
+        & a {
+            color: #FFF!important;
+            &:hover {
+                color: $primarycolor!important;
+            }
+        }
+    }
+    &__social {
+        width: 40%;
+        max-width: 300px;
+    }
+    &__amis {
+        width: 30%;
+        margin: auto!important;
+        & h3 {
+            font-size: 1.2em;
+            color: #000;
+        }
+        & ul, li, a {
+            list-style-type: none;
+            color: #FFF!important;
+            margin-left: 0;
+            padding-left: 0;
+            font-style: italic;
+        }
+        & a:hover {
+            text-decoration: none;
+            color: $primarycolor!important;
+        }
+    }
+  /*  
+    &__copyright {
+        margin-top: 20px;
+        color: #000;;
+        font-style: italic;
+        width: 100%;
+        border-top: 2px solid #000;
+        font-size: 0.8em;
+        & span {
+            font-family: 'Space Mono', 'Open Sans', Verdana, sans-serif;
+        }
+    }*/
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .menu {
+        &__item {
+            margin-top: 0px;
+            & a { 
+                margin-left: 10px!important;
+                text-align: left!important;
+            }
+        }
+        &__sousmenu a {
+            text-align: left;
+            margin-left: 10px!important;
+        }
+        &__img1 {
+            display: block;
+        }
+        &__img2 {
+            display: none;
+        }
+    }
+    .footer {
+        padding: 20px 20px;
+        &__social {
+            max-width: 200px;
+        }
+    }
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .menu {
+        &__item {
+            margin-top: 0px;
+            & a { 
+                margin-left: 10px!important;
+                text-align: left!important;
+            }
+        }
+        &__sousmenu a {
+            text-align: left;
+            margin-left: 10px!important;
+        }
+        &__img1 {
+            display: block;
+        }
+        &__img2 {
+            display: none;
+        }
+    }
+    .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__contact, &__social, &__amis {
+        width: 80%;
+    }
+    &__social {
+        margin-bottom: 30px;
+    }
+    &__amis {
+        text-align: center;
+    }
+  }
+}
+ 
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*/
+
+@media screen and (min-width : 1366px) {
+
+}

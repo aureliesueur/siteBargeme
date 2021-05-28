@@ -1,0 +1,370 @@
+$primarycolor: #9fb3b5;
+$secondarycolor: #732237; 
+$tertiarycolor: rgb(199,198,200);
+$boxcolor: #607375;
+$bkgcolor: #E9ECEF;
+
+body {
+    font-family: "Open Sans", Verdana, Geneva, sans-serif;
+    font-size: 0.9em;
+	//background-color: darken($bkgcolor, 5%);
+}
+
+section {
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	margin-top: 10px!important;
+	margin:60px;
+}
+
+.parcours, .pitchs {
+	&__title {
+		font-family: "Roboto", "Raleway", Verdana, sans-serif;
+		font-size: 2.5em;
+		color: $secondarycolor;
+		font-weight: bold;
+		border-bottom: 2px solid $secondarycolor;
+		margin-bottom: 30px;
+		margin-top: 50px;
+	}
+}
+
+.parcours {
+	background: url("../images/fondecriture.jpg") fixed no-repeat;
+    margin: 50px;
+    padding: 100px;
+	&__box {
+        background: rgba(250, 250, 250, 0.8);
+        padding: 60px;
+	}
+	&__citation {
+		font-family: 'Nothing You Could Do', cursive;
+		font-size: 2em;
+		display: block;
+		width: 70%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	&__text {
+		margin-left: 20px;
+		text-align: justify;
+	}
+	&__photos {
+		display: flex;
+		justify-content: center;
+	}
+	&__photo {
+		border: 2px solid #000;
+		max-height: 250px;
+		width: auto;
+		object-fit: contain;
+	}
+	&__actu {
+		width: 40%;
+		margin: auto;
+		margin-top: 60px;
+		margin-bottom: 40px;
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
+.photos {
+	&__vertical {
+		margin-right: 5px;
+	}
+}
+.pitchs {
+	margin-left: 60px;
+	margin-right: 60px;
+	&__title {
+		font-size: 2em;
+	}
+	&__projets {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	&__proj {
+		border: 1px solid $boxcolor;
+		border-radius:5px;
+		padding:20px;
+		& h3 {
+			color: #000; 
+			font-size: 1.7em;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		& h4 {
+			background-color: $boxcolor;
+			font-size: 1.5em;
+			color: #FFF;
+		}
+		& i {
+			font-size: 1em!important;
+			color: #000;
+			margin-left: 10px;
+		}
+	}
+	&__appel {
+		width: 60%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& h3 {
+			margin-top: 60px;
+			text-transform: none!important;
+			color: $secondarycolor!important;
+			font-size: 1.3em!important;
+			font-weight: bold;
+		}
+		& a, & i {
+			font-size: 2em;
+			color: $boxcolor;
+			&:hover {
+				color: $secondarycolor;
+			}
+		}
+	}
+}
+
+#theatre {
+	margin-right: 30px;
+}
+
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+	section {
+		padding:40px!important;
+	}
+	.parcours, .pitchs {
+		&__title {
+			font-size: 2.2em;
+			margin-top: 40px;
+			text-align: center;
+		}
+	}
+	.parcours {
+		padding: 60px;
+		margin: 0;
+		&__citation {
+			width: 80%;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		&__text {
+			margin-left: 0px;
+		}
+		&__photos {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__photo {
+			height: 250px;
+			width: auto;
+			object-fit: cover;	
+		}
+		&__actu {
+			width: 60%;
+			margin-bottom: 20px;
+		}
+	}
+	.photos {
+		&__vertical {
+			margin: 20px 0 5px 0;
+		}
+	}
+	.pitchs {
+		&__title {
+			font-size: 1.8em;
+		}
+		&__projets {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__proj {
+			padding: 30px;
+			width: 90%;
+			& h3 {
+				font-size: 1.7em;
+				margin-bottom: 20px;
+			}
+			& h4 {
+				font-size: 1.5em;
+			}
+		}
+		&__appel {
+			width: 60%;
+			& h3 {
+				margin-top: 60px;
+				font-size: 1.3em!important;
+			}
+			& a, & i {
+				font-size: 2em;
+			}
+		}
+	}
+	#theatre {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+
+/* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 1150px) and (max-width : 1320px) {
+	.parcours__photo {
+		height: 200px;
+	}
+}
+
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+	section {
+		padding:0!important;
+		margin: 0!important;
+	}
+	.parcours, .pitchs {
+		padding: 30px;
+		margin: 20px;
+		&__title {
+			font-size: 2.2em;
+			margin-top: 40px;
+			text-align: center;
+		}
+	}
+	.parcours {
+		&__citation {
+			width: 90%;
+			font-size: 1.4em;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			padding: 30px;
+		}
+		&__text {
+			margin-left: 0px;
+		}
+		&__photos {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__photo {
+			min-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		&__actu {
+			width: 80%;
+			margin-bottom: 20px;
+		}
+	}
+	.photos {
+		&__vertical {
+			margin: 20px 0 5px 0;
+			width: 100%;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			& img {
+				margin-bottom: 5px;
+			}
+		}
+		&__horizontal {
+			width: 100%x;
+		}
+	}
+	.pitchs {
+		padding: 0;
+		width: 100%;
+		&__title {
+			font-size: 1.5em;
+			width: 90%;
+			margin: auto;
+			margin-bottom: 20px;
+		}
+		&__projets {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__proj {
+			padding: 15px;
+			width: 90%;
+			& h3 {
+				font-size: 1.7em;
+				margin-bottom: 20px;
+			}
+			& h4 {
+				font-size: 1.5em;
+			}
+		}
+		&__appel {
+			width: 90%;
+			text-align: center;
+			& h3 {
+				margin-top: 60px;
+				font-size: 1.3em!important;
+			}
+			& a, & i {
+				font-size: 2em;
+			}
+		}
+	}
+	#theatre {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+ 
+
+/* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN SMARTPHONE------------------------------*/
+
+@media screen and (min-width : 500px) and (max-width : 1150px) {
+	.parcours {	
+		&__photo {
+			border: 2px solid #000;
+			max-height: 250px;
+			min-width: 0;
+			width: auto;
+			object-fit: contain;
+		}
+	}
+	.photos {
+		&__vertical {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: stretch;
+			margin-right: 0px;
+			margin-bottom: 10px;
+			& img {
+				min-width: 30%!important;
+				height: auto;
+				object-fit: cover;
+			}
+		}
+	}
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*/
+
+@media screen and (min-width : 1366px) {
+
+}

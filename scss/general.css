@@ -1,0 +1,187 @@
+/* MENU */
+header {
+  font-family: "Roboto", "Raleway", Verdana, sans-serif;
+  background-color: #bccacb;
+}
+
+.menu {
+  box-shadow: #607375 6px 6px 10px;
+}
+.menu__item {
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu__item a {
+  padding: 0 !important;
+  text-align: center;
+  margin-left: 50px;
+  color: black !important;
+}
+.menu__item a:hover {
+  color: #FFF !important;
+  text-decoration: none;
+}
+.menu__link {
+  font-size: 1.4em !important;
+}
+.menu__sousmenu a {
+  text-align: left;
+  margin-left: 10px;
+  padding: 0 !important;
+  text-transform: lowercase;
+  font-size: 14px !important;
+}
+.menu__sousmenu a:hover {
+  width: 90%;
+  background-color: #9fb3b5;
+}
+.menu__img1 {
+  display: none;
+}
+
+#dropdownMenuMetiers {
+  margin-right: 70px;
+}
+
+/* RESEAUX SOCIAUX */
+.sociallist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0;
+}
+.sociallist__social a {
+  color: #000 !important;
+  font-size: 2em;
+}
+.sociallist__social a:hover {
+  color: #FFF !important;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #732237;
+  color: #FFF !important;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /*  
+    &__copyright {
+        margin-top: 20px;
+        color: #000;;
+        font-style: italic;
+        width: 100%;
+        border-top: 2px solid #000;
+        font-size: 0.8em;
+        & span {
+            font-family: 'Space Mono', 'Open Sans', Verdana, sans-serif;
+        }
+    }*/
+}
+.footer__contact {
+  width: 30%;
+  font-size: 4em;
+  text-align: center;
+}
+.footer__contact a {
+  color: #FFF !important;
+}
+.footer__contact a:hover {
+  color: #9fb3b5 !important;
+}
+.footer__social {
+  width: 40%;
+  max-width: 300px;
+}
+.footer__amis {
+  width: 30%;
+  margin: auto !important;
+}
+.footer__amis h3 {
+  font-size: 1.2em;
+  color: #000;
+}
+.footer__amis ul, .footer__amis li, .footer__amis a {
+  list-style-type: none;
+  color: #FFF !important;
+  margin-left: 0;
+  padding-left: 0;
+  font-style: italic;
+}
+.footer__amis a:hover {
+  text-decoration: none;
+  color: #9fb3b5 !important;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__item {
+    margin-top: 0px;
+  }
+  .menu__item a {
+    margin-left: 10px !important;
+    text-align: left !important;
+  }
+  .menu__sousmenu a {
+    text-align: left;
+    margin-left: 10px !important;
+  }
+  .menu__img1 {
+    display: block;
+  }
+  .menu__img2 {
+    display: none;
+  }
+
+  .footer {
+    padding: 20px 20px;
+  }
+  .footer__social {
+    max-width: 200px;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu__item {
+    margin-top: 0px;
+  }
+  .menu__item a {
+    margin-left: 10px !important;
+    text-align: left !important;
+  }
+  .menu__sousmenu a {
+    text-align: left;
+    margin-left: 10px !important;
+  }
+  .menu__img1 {
+    display: block;
+  }
+  .menu__img2 {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer__contact, .footer__social, .footer__amis {
+    width: 80%;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+  .footer__amis {
+    text-align: center;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=general.css.map */

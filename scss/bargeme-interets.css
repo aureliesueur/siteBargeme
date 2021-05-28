@@ -1,0 +1,119 @@
+body {
+  font-family: "Open Sans", Verdana, Geneva, sans-serif;
+  font-size: 0.9em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px !important;
+}
+
+.interets__title {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 3em;
+  margin-bottom: 50px;
+  color: #732237;
+}
+.interets__baschet, .interets__ela {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: stretch;
+}
+.interets__ela {
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.interets__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 400px;
+  display: block;
+  border: 1px solid #000;
+  margin: 20px auto;
+}
+.interets__text {
+  text-align: justify;
+}
+.interets__liens {
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+.interets__liens a {
+  color: #732237;
+  text-align: center;
+}
+.interets__liens a:hover {
+  text-decoration: none;
+  color: #607375;
+}
+
+.ela__img, .baschet__img {
+  max-width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ela__text, .baschet__text {
+  max-width: 40%;
+  background-color: #E9ECEF;
+  padding: 30px;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .interets__baschet, .interets__ela {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .interets__title {
+    font-size: 2.5em;
+  }
+
+  .ela__img, .baschet__img {
+    max-width: 100%;
+  }
+  .ela__text, .baschet__text {
+    max-width: 100%;
+  }
+
+  .ela__img {
+    border: 1px solid #CCC;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  section {
+    padding: 20px !important;
+  }
+
+  .interets__baschet, .interets__ela {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .interets__title {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .ela__img, .baschet__img {
+    max-width: 100%;
+  }
+  .ela__text, .baschet__text {
+    max-width: 100%;
+  }
+
+  .ela__img {
+    border: 1px solid #CCC;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=bargeme-interets.css.map */

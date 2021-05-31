@@ -1,3 +1,8 @@
+body {
+  font-family: "Open Sans", Verdana, Geneva, sans-serif;
+  font-size: 0.9em;
+}
+
 /* MENU */
 header {
   font-family: "Roboto", "Raleway", Verdana, sans-serif;
@@ -5,7 +10,7 @@ header {
 }
 
 .menu {
-  box-shadow: #607375 6px 6px 10px;
+  box-shadow: #858888 6px 6px 10px;
 }
 .menu__item {
   margin-top: 70px;

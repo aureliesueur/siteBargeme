@@ -1,17 +1,27 @@
 $primarycolor: #9fb3b5;
 $secondarycolor: #732237; 
 $tertiarycolor: rgb(199,198,200);
-$boxcolor: #607375;
+$boxcolor: #858888;
 
-body {
-    font-family: "Open Sans", Verdana, Geneva, sans-serif;
-    font-size: 0.9em;
+#banniere {
+    display: none;
 }
 
 .present {
-    margin: 90px 70px;
+    background: url("../images/fondwelcome.jpg") no-repeat;
+    background-size: auto 400px;
+    width: 100%;
     margin-bottom: 0;
-    padding: 60px;
+    margin-top: 50px;
+    padding: 60px 60px 10px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__box {
+        background-color: rgba(233, 236, 239, 0.9);
+        width: 60%;
+        padding: 50px 30px;
+    }
     &__title {
         font-family: "Roboto", "Raleway", Verdana, sans-serif;
         color: $secondarycolor;
@@ -26,12 +36,13 @@ body {
         margin-right: 40px;
         text-align: justify;
         font-size: 1.1em;
+        font-weight: bold;
     }
 }
 
 .mauvaisesfilles {
-    background: url("../images/mauvaisesfilles.jpg") fixed no-repeat;
-    margin: 70px 40px;
+    background: url("../images/mauvaisesfilles2.jpg") fixed no-repeat;
+    margin: 40px;
     padding: 100px;
     &__box {
         display: flex;
@@ -73,8 +84,26 @@ body {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 
 @media screen and (min-width : 768px) and (max-width : 1024px) {
+    section {
+        padding: 0!important;
+    }
+    .menu {
+        box-shadow: none;
+    }
+    #banniere {
+        display: inline-block;
+    }
     .present {
-        margin: 60px;
+        margin: 60px!important;
+        background:none;
+        width: 90%;
+        margin: auto!important;
+        padding: 40px!important;
+        align-items: center!important;
+        &__box { 
+            width: 90%;
+            margin: auto;
+        }
     }
     .mauvaisesfilles {
         &__docs {
@@ -106,9 +135,20 @@ body {
     section {
         padding: 0!important;
     }
+    .menu {
+        box-shadow: none;
+    }
     .present {
-        margin: 30px;
-        padding: 20px;
+        margin: 30px!important;
+        background:none;
+        width: 100%;
+        margin: auto!important;
+        padding: 20px!important;
+        align-items: center!important;
+        &__box { 
+            width: 90%;
+            margin: 20px auto;
+        }
         &__title {
            text-align: center;
         }

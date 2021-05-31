@@ -1,42 +1,29 @@
 $primarycolor: #9fb3b5;
 $secondarycolor: #732237; 
 $tertiarycolor: rgb(199,198,200);
-$boxcolor: #607375;
+$boxcolor: #858888;
 $bkgcolor: #E9ECEF;
 
-body {
-    font-family: "Open Sans", Verdana, Geneva, sans-serif;
-    font-size: 0.9em;
-}
 
 section {
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-start;
 	align-items:center;
-    padding: 60px!important;
+    padding: 100px!important;
 }
 
 .interets {
+    width: 90%;
 	&__title {
         font-family: 'Nothing You Could Do', cursive;
         font-size: 3em;
         margin-bottom: 50px;
 		color: $secondarycolor;
 	}
-    &__baschet, &__ela {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: stretch;
-    }
-    &__ela {
-        flex-direction: row;
-        margin-bottom: 50px;
-    }
     &__img {
         object-fit: cover;
-        max-height: 400px;
+        max-height: 300px;
         display: block;
         border: 1px solid #000;
         margin: 20px auto;
@@ -61,24 +48,53 @@ section {
     }
 }
 
-.ela, .baschet {
-    &__img {
-        max-width: 50%;
-        object-fit: cover;
-    }
-    &__text {
-        max-width: 40%;
-        background-color: $bkgcolor;
+.baschet__box, .ela__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ela {
+    background: url("../images/ela3.png") no-repeat;
+    background-size: auto 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 70px 10px 10px 0;
+    margin-bottom: 50px;
+    &__box {
+        background-color: rgba(233, 236, 239, 0.9);
         padding: 30px;
+        width: 60%;
     }
 }
+
+.baschet {
+    background: url("../images/baschet2.jpg") no-repeat;
+    background-size: auto 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px 70px 10px;
+    &__box {
+        background-color: rgba(233, 236, 239, 0.9);
+        padding: 30px;
+        width: 60%;
+    }
+}
+
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 
 @media screen and (min-width : 768px) and (max-width : 1024px) { 
+    section {
+        padding: 60px!important;
+    }
     .interets {
+        width: 90%;
         &__baschet, &__ela {
             flex-direction: column;
             justify-content: flex-start;
@@ -89,25 +105,33 @@ section {
         }
     }
     .ela, .baschet {
+        align-items: center;
+        padding: 30px;
+        margin-bottom: 50px;
         &__img {
             max-width: 100%;
         }
         &__text {
             max-width: 100%;
         }
-    }
-    .ela__img {
-        border: 1px solid #CCC;
+        &__box {
+            width: 70%;
+        }
     }
 }
 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 768px) {
+    body {
+        font-size: 0.8em;
+    }
     section {
         padding: 20px!important;
     }
     .interets {
+        width: 100%;
+        padding: 0!important;
         &__baschet, &__ela {
             flex-direction: column;
             justify-content: flex-start;
@@ -115,20 +139,24 @@ section {
         }
         &__title {
             font-size: 2em;
-            margin-top: 20px;
+            margin-top: 30px;
+            padding: 10px;
             text-align: center;
         }
     }
     .ela, .baschet {
+        align-items: center;
+        padding: 30px;
+        margin-bottom: 50px;
         &__img {
             max-width: 100%;
         }
         &__text {
             max-width: 100%;
         }
-    }
-    .ela__img {
-        border: 1px solid #CCC;
+        &__box {
+            width: 90%;
+        }
     }
 }
  

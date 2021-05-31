@@ -1,8 +1,3 @@
-body {
-  font-family: "Open Sans", Verdana, Geneva, sans-serif;
-  font-size: 0.9em;
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -80,7 +75,7 @@ section {
   align-items: flex-start;
 }
 .pitchs__proj {
-  border: 1px solid #607375;
+  border: 1px solid #858888;
   border-radius: 5px;
   padding: 20px;
 }
@@ -92,7 +87,7 @@ section {
   margin-bottom: 20px;
 }
 .pitchs__proj h4 {
-  background-color: #607375;
+  background-color: #858888;
   font-size: 1.5em;
   color: #FFF;
 }
@@ -117,7 +112,7 @@ section {
 }
 .pitchs__appel a, .pitchs__appel i {
   font-size: 2em;
-  color: #607375;
+  color: #858888;
 }
 .pitchs__appel a:hover, .pitchs__appel i:hover {
   color: #732237;

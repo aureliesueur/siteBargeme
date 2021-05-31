@@ -1,0 +1,17 @@
+$primarycolor: #9fb3b5;
+$secondarycolor: #732237; 
+$tertiarycolor: rgb(199,198,200);
+$boxcolor: #858888;
+$bkgcolor: #E9ECEF;
+
+.menu {
+    box-shadow:none;
+    border-bottom: 2px solid #000;
+}
+
+section {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:flex-start;
+}

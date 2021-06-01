@@ -1,0 +1,43 @@
+$primarycolor: #9fb3b5;
+$secondarycolor: #732237; 
+$tertiarycolor: rgb(199,198,200);
+$boxcolor: #858888;
+
+.galerie {
+    &__title {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 3em;
+        color: $secondarycolor;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-family: "Roboto", "Raleway", Verdana, sans-serif;
+        margin-bottom: 30px;
+    }
+    &__photos img {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    
+    
+}
+ 
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+   
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*/
+
+@media screen and (min-width : 1366px) {
+
+}

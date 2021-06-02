@@ -64,6 +64,17 @@ section {
 		font-weight: bold;
 		font-style: italic;
 	}
+	&__cv {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-style: normal!important;
+		color: $secondarycolor!important;
+		& i {
+			font-size: 3em;
+			color: $secondarycolor;
+		}
+	}
 }
 
 .photos {
@@ -76,6 +87,7 @@ section {
 	margin-right: 60px;
 	&__title {
 		font-size: 2em;
+		margin-bottom: 40px!important;
 	}
 	&__projets {
 		display: flex;
@@ -105,14 +117,24 @@ section {
 			margin-left: 10px;
 		}
 	}
+	&__appelbox {
+		background: url("../images/fondecriture2.jpg") no-repeat;
+		background-size: cover;
+		width: 100%;
+		padding: 30px;
+		margin-top: 30px;
+	}
 	&__appel {
+		background-color: rgba(250, 250, 250, 0.7);
+		padding: 40px;
 		width: 60%;
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 		& h3 {
-			margin-top: 60px;
+			margin-top: 20px;
 			text-transform: none!important;
 			color: $secondarycolor!important;
 			font-size: 1.3em!important;
@@ -140,6 +162,7 @@ section {
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 	section {
 		padding:40px!important;
+		margin-bottom: 20px;
 	}
 	.parcours, .pitchs {
 		&__title {
@@ -150,7 +173,6 @@ section {
 	}
 	.parcours {
 		padding: 60px;
-		margin: 0;
 		&__citation {
 			width: 80%;
 			margin-top: 15px;
@@ -199,8 +221,12 @@ section {
 				font-size: 1.5em;
 			}
 		}
+		&__appelbox {
+			width: 100%;
+		}
 		&__appel {
-			width: 60%;
+			width: 90%;
+			text-align: center;
 			& h3 {
 				margin-top: 60px;
 				font-size: 1.3em!important;
@@ -235,7 +261,6 @@ section {
 	}
 	.parcours, .pitchs {
 		padding: 30px;
-		margin: 20px;
 		&__title {
 			font-size: 2.2em;
 			margin-top: 40px;
@@ -243,6 +268,7 @@ section {
 		}
 	}
 	.parcours {
+		margin: 30px 0;
 		&__citation {
 			width: 90%;
 			font-size: 1.4em;
@@ -314,7 +340,6 @@ section {
 		}
 		&__appel {
 			width: 90%;
-			text-align: center;
 			& h3 {
 				margin-top: 60px;
 				font-size: 1.3em!important;
@@ -334,7 +359,11 @@ section {
 /* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN SMARTPHONE------------------------------*/
 
 @media screen and (min-width : 500px) and (max-width : 1150px) {
+	section {
+        padding: 0!important;
+	}
 	.parcours {	
+		margin: 30px 0;
 		&__photo {
 			border: 2px solid #000;
 			max-height: 250px;

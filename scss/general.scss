@@ -86,23 +86,32 @@ header {
     padding: 20px 50px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     &__contact {
         width: 30%;
-        font-size: 4em;
-        text-align: center;
-        & a {
+        font-size: 1em;
+        padding-left: 10px;
+        & li, a {
+            list-style-type: none;
             color: #FFF!important;
-            &:hover {
-                color: $primarycolor!important;
-            }
+            margin-left: 0;
+            padding-left: 0;
+            font-style: italic;
+            font-size: 1em;
+        }
+        & a:hover {
+            color: $primarycolor!important;
+            text-decoration: none
+        }
+        & i {
+            font-size: 1.2em;
         }
     }
     &__social {
         width: 40%;
         max-width: 300px;
     }
-    &__amis {
+    &__agents {
         width: 30%;
         margin: auto!important;
         & h3 {
@@ -164,6 +173,9 @@ header {
         &__social {
             max-width: 200px;
         }
+        &__contact a, &__agents a {
+            font-size: 0.9em;
+        }
     }
 }
 
@@ -173,12 +185,14 @@ header {
     .menu {
         &__item {
             margin-top: 0px;
+            font-size: 15px;
             & a { 
                 margin-left: 10px!important;
                 text-align: left!important;
             }
         }
         &__sousmenu a {
+            font-size: 10px;
             text-align: left;
             margin-left: 10px!important;
         }
@@ -192,19 +206,28 @@ header {
     .footer {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    &__contact, &__social, &__amis {
-        width: 80%;
+    align-items: center!important;
+    &__contact, &__social, &__agents {
+        width: 50%;
     }
     &__social {
         margin-bottom: 30px;
     }
-    &__amis {
-        text-align: center;
-    }
   }
 }
  
+
+/* MEDIA QUERIES POUR ADAPTER LE MENU A UN ECRAN SMARTPHONE DE PETITE TAILLE------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .footer {
+        &__contact, &__social, &__agents {
+            width: 80%;
+        }
+      }
+}
+
+
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*/
 
 @media screen and (min-width : 1366px) {

@@ -68,6 +68,9 @@ section {
   color: #000;
   font-size: 4em;
 }
+.contact__mail:hover {
+  color: #FFF;
+}
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/

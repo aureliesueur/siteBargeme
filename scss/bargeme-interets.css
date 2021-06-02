@@ -15,6 +15,9 @@ section {
   margin-bottom: 50px;
   color: #732237;
 }
+.interets__ela, .interets__baschet {
+  border: 12px solid #9fb3b5;
+}
 .interets__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -50,7 +53,7 @@ section {
 }
 
 .ela {
-  background: url("../images/ela3.png") no-repeat;
+  background: url("../images/ela3.jpg") no-repeat;
   background-size: auto 800px;
   display: flex;
   flex-direction: column;
@@ -151,6 +154,17 @@ section {
   }
   .ela__box, .baschet__box {
     width: 90%;
+  }
+}
+/* MEDIA QUERIES POUR REGLER UN BUG DE TAILLE D'IMAGE SUR UN PETIT ECRAN SMARTPHONE------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 390px) {
+  .baschet__img {
+    width: 70%;
+  }
+
+  .interets__liens {
+    font-size: 1.1em;
+    width: 100%;
   }
 }
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=bargeme-interets.css.map */

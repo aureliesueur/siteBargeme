@@ -72,6 +72,9 @@ section {
 	&__mail {
 		color: #000;
 		font-size: 4em;
+		&:hover {
+			color: #FFF;
+		}
 	}
 }
 

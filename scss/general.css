@@ -77,7 +77,7 @@ header {
   padding: 20px 50px;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   /*  
     &__copyright {
         margin-top: 20px;
@@ -93,35 +93,44 @@ header {
 }
 .footer__contact {
   width: 30%;
-  font-size: 4em;
-  text-align: center;
+  font-size: 1em;
+  padding-left: 10px;
 }
-.footer__contact a {
+.footer__contact li, .footer__contact a {
+  list-style-type: none;
   color: #FFF !important;
+  margin-left: 0;
+  padding-left: 0;
+  font-style: italic;
+  font-size: 1em;
 }
 .footer__contact a:hover {
   color: #9fb3b5 !important;
+  text-decoration: none;
+}
+.footer__contact i {
+  font-size: 1.2em;
 }
 .footer__social {
   width: 40%;
   max-width: 300px;
 }
-.footer__amis {
+.footer__agents {
   width: 30%;
   margin: auto !important;
 }
-.footer__amis h3 {
+.footer__agents h3 {
   font-size: 1.2em;
   color: #000;
 }
-.footer__amis ul, .footer__amis li, .footer__amis a {
+.footer__agents ul, .footer__agents li, .footer__agents a {
   list-style-type: none;
   color: #FFF !important;
   margin-left: 0;
   padding-left: 0;
   font-style: italic;
 }
-.footer__amis a:hover {
+.footer__agents a:hover {
   text-decoration: none;
   color: #9fb3b5 !important;
 }
@@ -153,17 +162,22 @@ header {
   .footer__social {
     max-width: 200px;
   }
+  .footer__contact a, .footer__agents a {
+    font-size: 0.9em;
+  }
 }
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 768px) {
   .menu__item {
     margin-top: 0px;
+    font-size: 15px;
   }
   .menu__item a {
     margin-left: 10px !important;
     text-align: left !important;
   }
   .menu__sousmenu a {
+    font-size: 10px;
     text-align: left;
     margin-left: 10px !important;
   }
@@ -177,16 +191,19 @@ header {
   .footer {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center !important;
   }
-  .footer__contact, .footer__social, .footer__amis {
-    width: 80%;
+  .footer__contact, .footer__social, .footer__agents {
+    width: 50%;
   }
   .footer__social {
     margin-bottom: 30px;
   }
-  .footer__amis {
-    text-align: center;
+}
+/* MEDIA QUERIES POUR ADAPTER LE MENU A UN ECRAN SMARTPHONE DE PETITE TAILLE------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 500px) {
+  .footer__contact, .footer__social, .footer__agents {
+    width: 80%;
   }
 }
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=general.css.map */

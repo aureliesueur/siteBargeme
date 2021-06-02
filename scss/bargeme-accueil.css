@@ -5,7 +5,7 @@ section {
 
 .accueil {
   background: url("../images/portraitGrand.jpg") no-repeat center;
-  padding: 15% 15% 5% 15%;
+  padding: 15% 15% 3% 15%;
   margin-bottom: 0;
 }
 .accueil__text {
@@ -44,15 +44,17 @@ section {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .accueil {
-    padding: 20% 8% 5% 8%;
-    margin-top: 300px;
+    padding: 20% 8% 3% 8%;
+    margin-top: 50px;
+    background-size: cover;
+    min-height: 100%;
   }
   .accueil__text {
     font-size: 2.6em;
     margin-bottom: 50% !important;
   }
   .accueil__btn {
-    margin-bottom: 60px !important;
+    margin-bottom: 100px !important;
     margin-top: 40px;
   }
 
@@ -63,8 +65,7 @@ section {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .accueil {
-    padding: 15% 8% 5% 8%;
-    min-height: 500px;
+    padding: 15% 8% 10% 8%;
   }
   .accueil__text h1 {
     font-size: 2em;

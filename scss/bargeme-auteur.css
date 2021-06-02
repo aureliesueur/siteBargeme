@@ -58,6 +58,17 @@ section {
   font-weight: bold;
   font-style: italic;
 }
+.parcours__cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal !important;
+  color: #732237 !important;
+}
+.parcours__cv i {
+  font-size: 3em;
+  color: #732237;
+}
 
 .photos__vertical {
   margin-right: 5px;
@@ -69,6 +80,7 @@ section {
 }
 .pitchs__title {
   font-size: 2em;
+  margin-bottom: 40px !important;
 }
 .pitchs__projets {
   display: flex;
@@ -98,15 +110,25 @@ section {
   color: #000;
   margin-left: 10px;
 }
+.pitchs__appelbox {
+  background: url("../images/fondecriture2.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 30px;
+  margin-top: 30px;
+}
 .pitchs__appel {
+  background-color: rgba(250, 250, 250, 0.7);
+  padding: 40px;
   width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .pitchs__appel h3 {
-  margin-top: 60px;
+  margin-top: 20px;
   text-transform: none !important;
   color: #732237 !important;
   font-size: 1.3em !important;
@@ -129,6 +151,7 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   section {
     padding: 40px !important;
+    margin-bottom: 20px;
   }
 
   .parcours__title, .pitchs__title {
@@ -139,7 +162,6 @@ section {
 
   .parcours {
     padding: 60px;
-    margin: 0;
   }
   .parcours__citation {
     width: 80%;
@@ -188,8 +210,12 @@ section {
   .pitchs__proj h4 {
     font-size: 1.5em;
   }
+  .pitchs__appelbox {
+    width: 100%;
+  }
   .pitchs__appel {
-    width: 60%;
+    width: 90%;
+    text-align: center;
   }
   .pitchs__appel h3 {
     margin-top: 60px;
@@ -219,7 +245,6 @@ section {
 
   .parcours, .pitchs {
     padding: 30px;
-    margin: 20px;
   }
   .parcours__title, .pitchs__title {
     font-size: 2.2em;
@@ -227,6 +252,9 @@ section {
     text-align: center;
   }
 
+  .parcours {
+    margin: 30px 0;
+  }
   .parcours__citation {
     width: 90%;
     font-size: 1.4em;
@@ -299,7 +327,6 @@ section {
   }
   .pitchs__appel {
     width: 90%;
-    text-align: center;
   }
   .pitchs__appel h3 {
     margin-top: 60px;
@@ -316,6 +343,13 @@ section {
 }
 /* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN SMARTPHONE------------------------------*/
 @media screen and (min-width: 500px) and (max-width: 1150px) {
+  section {
+    padding: 0 !important;
+  }
+
+  .parcours {
+    margin: 30px 0;
+  }
   .parcours__photo {
     border: 2px solid #000;
     max-height: 250px;

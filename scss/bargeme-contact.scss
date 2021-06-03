@@ -9,6 +9,21 @@ $bkgcolor: #E9ECEF;
     border-bottom: 2px solid #000;
 }
 
+#banniere {
+	animation: revelation 1000ms both ease-in-out!important;
+}
+
+/*Animation bannière*/
+
+@keyframes revelation {
+    0% {
+        opacity: 0;  
+    }
+    100% {
+        opacity: 1;  
+    }
+}
+
 section {
 	display:flex;
 	flex-direction:row;
@@ -20,6 +35,7 @@ section {
 .agents {
 	background-color: #FFF;
 	padding: 50px;
+	animation: revelationLtoR 1000ms both ease-in-out!important;
 	&__title {
 		font-family: 'Nothing You Could Do', cursive;
         font-size: 3em;
@@ -58,6 +74,7 @@ section {
 	justify-content: flex-start;
 	align-items: center;
 	margin-left: 30px;
+	animation: revelationRtoL 1000ms both ease-in-out!important;
 	&__icons {
 		width: 60%;
 		display: flex;
@@ -72,12 +89,23 @@ section {
 	&__mail {
 		color: #000;
 		font-size: 4em;
+		animation: bounce 1s infinite alternate;
 		&:hover {
 			color: #FFF;
 		}
 	}
 }
 
+/*Animation de l'icône mail qui rebondit*/
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 
@@ -98,6 +126,7 @@ section {
 	}
 	#banniere {
 		display: none;
+		animation: none;
 	}
 	section {
 		flex-direction:column;
@@ -106,11 +135,15 @@ section {
 	.agents {
 		margin: 20px!important;
 		padding: 20px!important;
+		animation: none!important;
+		animation: revelationUtoD 1000ms both ease-in-out!important;
 	}
 	.contact {
 		margin: 0!important;
 		font-size: 1em;
 		padding: 30px;
+		animation: none!important;
+		animation: revelationUtoD 1000ms 1500ms both ease-in-out!important;
 	}
 }
  

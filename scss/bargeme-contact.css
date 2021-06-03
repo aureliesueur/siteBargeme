@@ -1,8 +1,31 @@
+@charset "UTF-8";
 .menu {
   box-shadow: none;
   border-bottom: 2px solid #000;
 }
 
+#banniere {
+  -webkit-animation: revelation 1000ms both ease-in-out !important;
+          animation: revelation 1000ms both ease-in-out !important;
+}
+
+/*Animation bannière*/
+@-webkit-keyframes revelation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes revelation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 section {
   display: flex;
   flex-direction: row;
@@ -14,6 +37,8 @@ section {
 .agents {
   background-color: #FFF;
   padding: 50px;
+  -webkit-animation: revelationLtoR 1000ms both ease-in-out !important;
+          animation: revelationLtoR 1000ms both ease-in-out !important;
 }
 .agents__title {
   font-family: "Nothing You Could Do", cursive;
@@ -52,6 +77,8 @@ section {
   justify-content: flex-start;
   align-items: center;
   margin-left: 30px;
+  -webkit-animation: revelationRtoL 1000ms both ease-in-out !important;
+          animation: revelationRtoL 1000ms both ease-in-out !important;
 }
 .contact__icons {
   width: 60%;
@@ -67,11 +94,30 @@ section {
 .contact__mail {
   color: #000;
   font-size: 4em;
+  -webkit-animation: bounce 1s infinite alternate;
+          animation: bounce 1s infinite alternate;
 }
 .contact__mail:hover {
   color: #FFF;
 }
 
+/*Animation de l'icône mail qui rebondit*/
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -88,6 +134,8 @@ section {
 
   #banniere {
     display: none;
+    -webkit-animation: none;
+            animation: none;
   }
 
   section {
@@ -98,12 +146,20 @@ section {
   .agents {
     margin: 20px !important;
     padding: 20px !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-animation: revelationUtoD 1000ms both ease-in-out !important;
+            animation: revelationUtoD 1000ms both ease-in-out !important;
   }
 
   .contact {
     margin: 0 !important;
     font-size: 1em;
     padding: 30px;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-animation: revelationUtoD 1000ms 1500ms both ease-in-out !important;
+            animation: revelationUtoD 1000ms 1500ms both ease-in-out !important;
   }
 }
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN GRAND ECRAN------------------------------*//*# sourceMappingURL=bargeme-contact.css.map */

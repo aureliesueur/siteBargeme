@@ -17,10 +17,12 @@ $boxcolor: #858888;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    animation: revelationLtoR 1000ms both ease-in-out;
     &__box {
         background-color: rgba(233, 236, 239, 0.9);
         width: 60%;
         padding: 50px 30px;
+        animation: revelationRtoL 1000ms 200ms both ease-in-out;
     }
     &__title {
         font-family: "Roboto", "Raleway", Verdana, sans-serif;
@@ -73,11 +75,16 @@ $boxcolor: #858888;
     }
     &__affiche {
         margin-right: 30px;
+        animation: revelationLtoR 1000ms 1500ms both ease-in-out;
+    }
+    &__presse {
+        animation: revelationRtoL 1000ms 1500ms both ease-in-out;
     }
     &__affiche, &__presse {
         border: 2px solid $secondarycolor;
     }
 }
+
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 
@@ -92,8 +99,11 @@ $boxcolor: #858888;
     }
     #banniere {
         display: inline-block;
+        animation: revelationLtoR 1000ms both ease-in-out!important;
+        z-index: -10;
     }
     .present {
+        animation: none!important;
         margin: 60px!important;
         background:none;
         width: 90%;
@@ -136,6 +146,7 @@ $boxcolor: #858888;
         padding: 0!important;
     }
     .present {
+        animation: none!important;
         margin: 30px!important;
         background:none;
         width: 100%;
@@ -143,6 +154,8 @@ $boxcolor: #858888;
         padding: 20px!important;
         align-items: center!important;
         &__box { 
+            animation: none!important;
+            animation: revelationUtoD 1000ms both ease-in-out!important;
             width: 90%;
             margin: 20px auto;
         }

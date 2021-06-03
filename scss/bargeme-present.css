@@ -12,11 +12,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  -webkit-animation: revelationLtoR 1000ms both ease-in-out;
+          animation: revelationLtoR 1000ms both ease-in-out;
 }
 .present__box {
   background-color: rgba(233, 236, 239, 0.9);
   width: 60%;
   padding: 50px 30px;
+  -webkit-animation: revelationRtoL 1000ms 200ms both ease-in-out;
+          animation: revelationRtoL 1000ms 200ms both ease-in-out;
 }
 .present__title {
   font-family: "Roboto", "Raleway", Verdana, sans-serif;
@@ -69,6 +73,12 @@
 }
 .mauvaisesfilles__affiche {
   margin-right: 30px;
+  -webkit-animation: revelationLtoR 1000ms 1500ms both ease-in-out;
+          animation: revelationLtoR 1000ms 1500ms both ease-in-out;
+}
+.mauvaisesfilles__presse {
+  -webkit-animation: revelationRtoL 1000ms 1500ms both ease-in-out;
+          animation: revelationRtoL 1000ms 1500ms both ease-in-out;
 }
 .mauvaisesfilles__affiche, .mauvaisesfilles__presse {
   border: 2px solid #732237;
@@ -87,9 +97,14 @@
 
   #banniere {
     display: inline-block;
+    -webkit-animation: revelationLtoR 1000ms both ease-in-out !important;
+            animation: revelationLtoR 1000ms both ease-in-out !important;
+    z-index: -10;
   }
 
   .present {
+    -webkit-animation: none !important;
+            animation: none !important;
     margin: 60px !important;
     background: none;
     width: 90%;
@@ -131,6 +146,8 @@
   }
 
   .present {
+    -webkit-animation: none !important;
+            animation: none !important;
     margin: 30px !important;
     background: none;
     width: 100%;
@@ -139,6 +156,10 @@
     align-items: center !important;
   }
   .present__box {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-animation: revelationUtoD 1000ms both ease-in-out !important;
+            animation: revelationUtoD 1000ms both ease-in-out !important;
     width: 90%;
     margin: 20px auto;
   }

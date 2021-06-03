@@ -20,6 +20,7 @@ section {
         font-size: 3em;
         margin-bottom: 50px;
 		color: $secondarycolor;
+        animation: revelationUtoD 1000ms both ease-in-out;
 	}
     &__ela, &__baschet {
         border: 12px solid $primarycolor;
@@ -49,6 +50,28 @@ section {
             }
         }
     }
+    &__heart {
+        animation: heartbeat 1s infinite;
+    }
+}
+
+/*Animation du coeur qui bat*/
+@keyframes heartbeat { 
+    0% { 
+        transform: scale( .90 ); 
+    } 
+    20% { 
+        transform: scale( .95 ); 
+    } 
+    30% { 
+        transform: scale( .90 ); 
+    } 
+    40% { 
+        transform: scale( 1 ); 
+    } 
+    100% { 
+        transform: scale( .90 ); 
+    } 
 }
 
 .baschet__box, .ela__box {
@@ -66,6 +89,7 @@ section {
     align-items: flex-end;
     padding: 70px 10px 10px 0;
     margin-bottom: 50px;
+    animation: revelationDtoU 1000ms both ease-in-out;
     &__box {
         background-color: rgba(233, 236, 239, 0.9);
         padding: 30px;
@@ -80,6 +104,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 0px 70px 10px;
+    animation: revelationDtoU 1000ms 1500ms both ease-in-out;
     &__box {
         background-color: rgba(233, 236, 239, 0.9);
         padding: 30px;

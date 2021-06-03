@@ -10,13 +10,17 @@ $boxcolor: #858888;
         color: $secondarycolor;
         margin-top: 50px;
         margin-bottom: 30px;
+        animation: revelationUtoD 1000ms both ease-in-out;
     }
     &__text {
         font-family: "Roboto", "Raleway", Verdana, sans-serif;
         margin-bottom: 30px;
     }
-    &__photos img {
-        margin-bottom: 10px;
+    &__photos {
+        animation: revelationDtoU 1000ms both ease-in-out;
+        & img {
+            margin-bottom: 10px;
+        }
     }
 }
 

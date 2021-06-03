@@ -10,9 +10,11 @@ $boxcolor: #858888;
     padding: 100px;
     margin-bottom: 150px;
     position: relative;
+    animation: revelationLtoR 1000ms both ease-in-out;
     &__box {
         background: rgba(250, 250, 250, 0.7);
         padding: 60px;
+        animation: revelationRtoL 1000ms both ease-in-out;
     }
     &__citation {
         font-family: 'Nothing You Could Do', cursive;
@@ -21,6 +23,7 @@ $boxcolor: #858888;
 		width: 70%;
 		margin: auto;
 		margin-bottom: 40px;
+        animation: revelationUtoD 1000ms both ease-in-out;
     }
     &__title {
         font-family: "Roboto", "Raleway", Verdana, sans-serif;
@@ -58,6 +61,15 @@ $boxcolor: #858888;
         margin-bottom: 30px;
         padding-bottom: 30px;
     }
+    &__demo {
+        animation: revelationDtoU 1000ms 1500ms both ease-in-out;
+    }
+    &__audio {
+        animation: revelationDtoU 1000ms 2000ms both ease-in-out;
+    }
+    &__cv {
+        animation: revelationDtoU 1000ms 2500ms both ease-in-out;
+    }
     &__icon {
         color: darken($primarycolor, 10%);
         font-size: 3em;
@@ -79,11 +91,14 @@ $boxcolor: #858888;
         padding: 60px;
         margin-bottom: 100px;
         position: relative;
+        animation: none;
         &__title {
             text-align: center;
         }
         &__box {
             padding: 40px;
+            animation: none;
+            animation: revelationUtoD 1000ms both ease-in-out;
         }
         &__title {
             margin-bottom: 20px;
@@ -124,6 +139,7 @@ $boxcolor: #858888;
         padding: 30px;
         margin-bottom: 80px;
         position: relative;
+        animation: none;
         &__citation {
             font-size: 1.8em;
         }
@@ -136,6 +152,8 @@ $boxcolor: #858888;
         }
         &__box {
             padding: 40px;
+            animation: none;
+            animation: revelationUtoD 1000ms both ease-in-out;
         }
         &__title {
             margin-bottom: 20px;

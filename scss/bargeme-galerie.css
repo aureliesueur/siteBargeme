@@ -4,10 +4,16 @@
   color: #732237;
   margin-top: 50px;
   margin-bottom: 30px;
+  -webkit-animation: revelationUtoD 1000ms both ease-in-out;
+          animation: revelationUtoD 1000ms both ease-in-out;
 }
 .galerie__text {
   font-family: "Roboto", "Raleway", Verdana, sans-serif;
   margin-bottom: 30px;
+}
+.galerie__photos {
+  -webkit-animation: revelationDtoU 1000ms both ease-in-out;
+          animation: revelationDtoU 1000ms both ease-in-out;
 }
 .galerie__photos img {
   margin-bottom: 10px;

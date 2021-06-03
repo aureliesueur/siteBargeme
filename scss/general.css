@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Open Sans", Verdana, Geneva, sans-serif;
   font-size: 0.9em;
@@ -198,6 +199,87 @@ header {
   }
   .footer__social {
     margin-bottom: 30px;
+  }
+}
+/*Animation à l'arrivée sur la page*/
+@-webkit-keyframes revelationLtoR {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes revelationLtoR {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes revelationRtoL {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes revelationRtoL {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes revelationUtoD {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes revelationUtoD {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes revelationDtoU {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes revelationDtoU {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* MEDIA QUERIES POUR ADAPTER LE MENU A UN ECRAN SMARTPHONE DE PETITE TAILLE------------------------------------------------*/

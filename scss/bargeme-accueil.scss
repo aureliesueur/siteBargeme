@@ -13,6 +13,7 @@ section {
     background: url("../images/portraitGrand.jpg") no-repeat center;
     padding: 15% 15% 3% 15%;
     margin-bottom: 0;
+    animation: revelationDtoU 1000ms both ease-in-out;
     &__text {
         text-align: center;
         margin-bottom: 30%!important;
@@ -35,6 +36,7 @@ section {
         transform: scale(1);
         transition: all 500ms ease-in-out;
         text-decoration: none;
+        animation: revelationUtoD 1000ms both ease-in-out;
         &:hover {
             transform: scale(1.3);
             color: #FFF!important;
@@ -45,6 +47,7 @@ section {
 .sociallist {
     margin: auto!important;
     width: 30%;
+    animation: revelationDtoU 1000ms both ease-in-out;
 }
 
 

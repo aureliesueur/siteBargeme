@@ -21,10 +21,14 @@ section {
   background: url("../images/fondecriture.jpg") fixed no-repeat;
   margin: 50px;
   padding: 100px;
+  -webkit-animation: revelationLtoR 1000ms both ease-in-out;
+          animation: revelationLtoR 1000ms both ease-in-out;
 }
 .parcours__box {
   background: rgba(250, 250, 250, 0.8);
   padding: 60px;
+  -webkit-animation: revelationRtoL 1000ms both ease-in-out;
+          animation: revelationRtoL 1000ms both ease-in-out;
 }
 .parcours__citation {
   font-family: "Nothing You Could Do", cursive;
@@ -33,6 +37,8 @@ section {
   width: 70%;
   margin: auto;
   margin-bottom: 40px;
+  -webkit-animation: revelationUtoD 1000ms both ease-in-out;
+          animation: revelationUtoD 1000ms both ease-in-out;
 }
 .parcours__text {
   margin-left: 20px;
@@ -136,14 +142,44 @@ section {
 }
 .pitchs__appel a, .pitchs__appel i {
   font-size: 2em;
-  color: #858888;
+  color: #732237;
 }
 .pitchs__appel a:hover, .pitchs__appel i:hover {
-  color: #732237;
+  color: #858888;
 }
 
 #theatre {
   margin-right: 30px;
+  -webkit-animation: revelationLtoR 1000ms 2000ms both ease-in-out;
+          animation: revelationLtoR 1000ms 2000ms both ease-in-out;
+}
+
+#image {
+  -webkit-animation: revelationRtoL 1000ms 2500ms both ease-in-out;
+          animation: revelationRtoL 1000ms 2500ms both ease-in-out;
+}
+
+.retour {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+.retour__text {
+  font-size: 1.2em;
+  color: #9fb3b5;
+}
+.retour__icon {
+  font-size: 2.5em;
+  color: #9fb3b5 !important;
+}
+.retour__link {
+  color: #9fb3b5 !important;
+}
+.retour__link:hover {
+  color: #858888;
 }
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
@@ -162,6 +198,14 @@ section {
 
   .parcours {
     padding: 60px;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .parcours__box {
+    -webkit-animation: none;
+            animation: none;
+    -webkit-animation: revelationUtoD 1000ms both ease-in-out;
+            animation: revelationUtoD 1000ms both ease-in-out;
   }
   .parcours__citation {
     width: 80%;
@@ -228,6 +272,15 @@ section {
   #theatre {
     margin-right: 0;
     margin-bottom: 30px;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-animation: revelationUtoD 1000ms 1500ms both ease-in-out;
+            animation: revelationUtoD 1000ms 1500ms both ease-in-out;
+  }
+
+  #image {
+    -webkit-animation: revelationUtoD 1000ms 2000ms both ease-in-out;
+            animation: revelationUtoD 1000ms 2000ms both ease-in-out;
   }
 }
 /* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN TABLETTE------------------------------*/
@@ -254,6 +307,8 @@ section {
 
   .parcours {
     margin: 30px 0;
+    -webkit-animation: none;
+            animation: none;
   }
   .parcours__citation {
     width: 90%;
@@ -263,6 +318,10 @@ section {
   }
   .parcours__box {
     padding: 30px;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-animation: revelationUtoD 1000ms both ease-in-out;
+            animation: revelationUtoD 1000ms both ease-in-out;
   }
   .parcours__text {
     margin-left: 0px;
@@ -339,6 +398,22 @@ section {
   #theatre {
     margin-right: 0;
     margin-bottom: 30px;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-animation: revelationUtoD 1000ms 2000ms both ease-in-out;
+            animation: revelationUtoD 1000ms 2000ms both ease-in-out;
+  }
+
+  #image {
+    -webkit-animation: revelationUtoD 1000ms 3000ms both ease-in-out;
+            animation: revelationUtoD 1000ms 3000ms both ease-in-out;
+  }
+
+  .retour__text {
+    font-size: 1em;
+  }
+  .retour__icon {
+    font-size: 2em;
   }
 }
 /* MEDIA QUERIES POUR REGLER UN BUG DE MISE EN PAGE DES PHOTOS SUR ECRAN SMARTPHONE------------------------------*/

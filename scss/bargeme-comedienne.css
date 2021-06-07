@@ -2,7 +2,7 @@
   background: url("../images/fondtheatre.jpg") fixed no-repeat;
   margin: 50px;
   padding: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   position: relative;
   -webkit-animation: revelationLtoR 1000ms both ease-in-out;
           animation: revelationLtoR 1000ms both ease-in-out;
@@ -40,7 +40,7 @@
   border: 4px solid #732237;
   width: 80%;
   position: absolute;
-  bottom: -110px;
+  bottom: -130px;
   left: 10%;
 }
 
@@ -94,6 +94,7 @@
   }
   .intro__title {
     text-align: center;
+    margin-bottom: 20px;
   }
   .intro__box {
     padding: 40px;
@@ -102,13 +103,10 @@
     -webkit-animation: revelationUtoD 1000ms both ease-in-out;
             animation: revelationUtoD 1000ms both ease-in-out;
   }
-  .intro__title {
-    margin-bottom: 20px;
-  }
   .intro__img {
     width: 100%;
     position: absolute;
-    bottom: -50px;
+    bottom: -120px !important;
     left: 0%;
   }
 

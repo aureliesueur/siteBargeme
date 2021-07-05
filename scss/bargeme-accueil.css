@@ -4,7 +4,7 @@ section {
 }
 
 .accueil {
-  background: url("../images/portraitGrand.jpg") no-repeat center;
+  background: url("../images/portraitGrand3.jpg") no-repeat center;
   padding: 15% 15% 3% 15%;
   margin-bottom: 0;
   -webkit-animation: revelationDtoU 1000ms both ease-in-out;
@@ -88,5 +88,14 @@ section {
   .sociallist {
     margin-top: 15px !important;
     width: 50%;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A GRAND DESKTOP -----------------------------------------------*/
+@media only screen and (min-width: 1020px) {
+  .accueil {
+    padding: 5% 15% 3% 15%;
+  }
+  .accueil__text {
+    margin-bottom: 40% !important;
   }
 }/*# sourceMappingURL=bargeme-accueil.css.map */
